@@ -12,7 +12,12 @@ pageMainPanel <- mainPanel(
     verbatimTextOutput("inputValue"),
     h4("Predicted child's height: "),
     verbatimTextOutput("prediction"),
-    plotOutput('newHist')
+    plotOutput('newHist'),
+    br(),
+    br(),
+    h4("This application's code is OpenSource:"),
+    p(a("View on Github", href="https://github.com/Canuteson/ddp-shiny-app"))
+    
 )
 
 shinyUI(
